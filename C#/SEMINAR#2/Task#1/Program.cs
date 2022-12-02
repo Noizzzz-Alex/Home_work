@@ -12,5 +12,5 @@ int max = 0;
 
 
 max = NumSTR1 % 100 / 10;
-Console.WriteLine($"Max = {max}");
+Console.WriteLine($"Вторая цифра числа =  {max}");
 
