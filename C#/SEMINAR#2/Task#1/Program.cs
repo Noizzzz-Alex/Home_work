@@ -7,10 +7,10 @@
 */
 
 Console.WriteLine("Введите 3-х значное число");
-int NumSTR1 = int.Parse(Console.ReadLine()??"");
+int numSTR1 = int.Parse(Console.ReadLine()??"");
 int max = 0;
 
 
-max = NumSTR1 % 100 / 10;
+max = numSTR1 % 100 / 10;
 Console.WriteLine($"Вторая цифра числа =  {max}");
 
