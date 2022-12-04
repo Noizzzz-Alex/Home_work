@@ -9,27 +9,27 @@
 
 Console.WriteLine("Введите число");
 
-int numSTR1 = int.Parse(Console.ReadLine()??"");
+int numSTR1 = int.Parse(Console.ReadLine() ?? "");
 int dig = 0;
 
 if (100 <= numSTR1 && numSTR1 <= 999)
 {
-dig = numSTR1 % 10;
-Console.WriteLine($"Третья цифра числа = {dig}");
+    dig = numSTR1 % 10;
+    Console.WriteLine($"Третья цифра числа = {dig}");
 }
 
 if (0 <= numSTR1 && numSTR1 <= 99)
 {
-Console.WriteLine("Третья цифра отсутсвует");
+    Console.WriteLine("Третья цифра отсутсвует");
 }
 
 
 if (numSTR1 > 999)
 {
-while (numSTR1 > 999)
+    while (numSTR1 > 999)
     {
         numSTR1 = numSTR1 / 10;
     }
-numSTR1 = numSTR1 % 10;
-Console.WriteLine($"Третья цифра числа = {numSTR1}");
+    numSTR1 = numSTR1 % 10;
+    Console.WriteLine($"Третья цифра числа = {numSTR1}");
 }
