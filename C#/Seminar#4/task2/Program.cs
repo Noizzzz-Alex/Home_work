@@ -35,15 +35,15 @@ int GetSumDigit();
     int digit = 
 }
 */
-int number = GetNumber("Input number");
+int number = GetNumber("Введите число");
 int result = 0;
-while(number > 99)
+while (number > 99)
 {
     int lastDigit = number % 10;
-   
-    number = number/10;
-    
+
+    number = number / 10;
+
     result = result + lastDigit;
 }
-result = (number / 10) + (number%10) + result;
-Console.WriteLine(result);
+result = (number / 10) + (number % 10) + result;
+Console.WriteLine($"Сумма всех цифр числа ={result}");
