@@ -5,6 +5,7 @@
 
 2, 4 -> 16
 */
+
 double GetNumber(string message)
 {
     bool isCorrect = false;
@@ -29,5 +30,15 @@ double GetNumber(string message)
 
 double number = GetNumber("введите число");
 double pow = GetNumber("в какую степень желаете возвести?");
-double multi = Math.Pow(number, pow);
-Console.WriteLine($"{number} ^{pow} = {multi}");
+/*
+первый вариант решения задачи с помощью метода.
+
+double result = Math.Pow(number, pow);
+Console.WriteLine($"{number} ^{pow} = {result}"); 
+*/
+// второй вариант решение задачи с помощью цикла.
+for (int i = 1; i < pow; i++)
+{
+    double result = number * number;
+    Console.WriteLine($"{number} ^{pow} = {result}");
+}
