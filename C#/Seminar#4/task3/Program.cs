@@ -38,8 +38,7 @@ int number7 = GetNumber("input number #7");
 int number8 = GetNumber("input number #8");
 */
 // Console.WriteLine(array);
-
-
+// как сумел понять условие задачи так и сделал.
 for (int i = 0; i < array.Length; i++)
 {
     int number = GetNumber("Input number");
@@ -47,3 +46,4 @@ for (int i = 0; i < array.Length; i++)
     
 }
 Console.Write($"[{array[0]}, {array[1]}, {array[2]}, {array[3]}, {array[4]}, {array[5]}, {array[6]}, {array[7]}] ");
+/*можно было вообще ввести 8 переменных и присвоить каждую по индексу массива.*/
