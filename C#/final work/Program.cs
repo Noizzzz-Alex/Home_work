@@ -8,3 +8,11 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        arraynew[i] = array[i];
+
+    }
+}
